@@ -1,0 +1,392 @@
+html,
+body {
+	background-color: #ebeef4;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+* {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	/*box-sizing: border-box;*/
+}
+
+/**:after, before: {
+	box-sizing: inherit;
+}*/
+
+/* height specification of .container necessary for footer to sit reliably at bottom of page */
+/* https://stackoverflow.com/questions/5189238/how-to-make-a-footer-fixed-in-the-page-bottom */
+.container {
+	background-color: #ebeef4;
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px;
+}
+
+.body-container {
+	background-color: #ebeef4;
+	width: 100%;
+}
+
+.row-features {
+	display: flex;
+	/*background-color: #ebeef4;*/
+	background-color: #FEF9E7;
+	align-items: center;
+	max-height: 100%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.row-features-catalog {
+	flex: 1;
+	flex-direction: column;
+	margin-top: 5px;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+#catalog {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.catalog-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
+	border: .5px solid blue;
+	margin: -5px 5px 10px 15px;
+	padding: 20px;
+}
+
+.form-features {
+	display: flex;
+	flex-direction: column;
+	/*background-color: #ebeef4;*/
+	background-color: #FEF9E7;
+	//align-items: center;
+	max-height: 100%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.form-feature {
+	flex: 1;
+	flex-direction: column;
+	//border: 1px solid green;
+	align-items: left;
+	margin-top: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+.profile-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.feature {
+	flex: 1;
+	//border: 1px solid green;
+	margin-top: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 2px;
+}
+
+.profile {
+	margin-bottom: 10px;
+	margin-right: 5%;
+}
+
+#spacing {
+	background-color: #FEF9E7;
+	height: 60px; /* must equal height of #footer */
+	border-radius: 10px;
+}
+
+#spacing-login {
+	height: 60px;
+}
+
+#footer {
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    background-color: #a9a9a9;
+    height: 60px; /* height must equal height in #spacing div */
+    border-radius: 5px;
+}
+
+#dash-spacing {
+	background-color: #ebeef4;
+	height: 200px; /* must equal height of #footer */
+	border-radius: 10px;
+}
+#dash-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    position: relative;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    background-color: #a9a9a9;
+    height: 60px; /* height must equal height in #spacing div */
+    border-radius: 5px;
+}
+
+#owner-req {
+
+}
+
+#request {
+	line-height: 5px;
+}
+
+#footer-txt {
+	font-size: 20px;
+	color: blue;
+	text-align: center;
+}
+
+.row-title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #bad6ef;
+	margin-top: 10px;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.row-title-profile {
+	width: 100%;
+	max-height: 25px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #bad6ef;
+	margin-top: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#done {
+	font-size: 20px;
+	width: 120px!important;
+	padding: 5px!important;
+	background-color: #999!important;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+
+.row-login {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 25px;
+	margin: 0 auto;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+#container-login {
+	width: 50%;
+	border: 1px solid green;
+	margin-top: 25px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#login-form {
+	display: flex;
+	flex-direction: column;
+}
+
+#register-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.password-input, .email-input, #full-name {
+	padding: 10px;
+}
+
+input {
+	margin: 10px;
+	height: 25px;
+	flex: 1;
+	border-radius: 5px;
+}
+
+::placeholder {
+	margin: 3px;
+	padding: 5px;
+}
+
+#sub-title {
+	font-size: 25px;
+}
+
+#sub-title-profile {
+	font-size: 23px;
+}
+
+.nav-bar {
+	position: relative;
+	max-width: 100%;
+	/*background-color: #ebeef4;*/
+	background-color: #a9a9a9;
+	border: .1px solid transparent;
+	border-radius: 10px;
+}
+
+.nav-list {
+	width: 100%;
+   	display: flex;
+   	font-size: 25px;
+   	list-style: none;
+}
+
+.nav-list > .nav-item {
+	flex: auto;
+   	text-align: left;
+   	font-size: 20px;
+   	margin-left: 25px;
+}
+
+.profile > ul {
+	color: blue;
+}
+
+/*.sub-ul {
+	list-style: none;
+}*/
+
+.nav-bar > ul > li > ul{
+	//position: absolute;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-height: 0;
+	list-style: none;
+	padding-left: 5px;
+	transition: all 1.5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+}
+
+.nav-bar > ul > li:hover > ul {
+	overflow: visible;
+	max-height: 350px;
+	 animation: appear .5s ease-in;
+  -webkit-animation: appear .5s ease-in;
+	transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+}
+
+.login {
+	margin-left: 30%;
+}
+
+.log-out {
+	margin-right: 40%;
+}
+
+.profile {
+	margin-left: 25%;
+	padding-right: 10px;
+}
+
+.register {
+	flex: 1;
+}
+
+.welcome {
+	flex: 1;
+}
+
+a, a:active, a:focus, a:hover, a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+#forgot {
+	color: blue;
+}
+
+
+@media all and (max-width: 600px) {
+
+   #footer {
+   	 display: flex;
+   	 flex-direction: column;
+	 position: relative; /* Changed position to relative to keep footer on bottom */
+	}
+
+  .row-features {
+  	flex-wrap: wrap;
+  }
+
+  .row-features > div {
+  	flex-basis: 100%;
+  	//padding: 5%;
+  }
+     
+  .nav-list {
+    flex-wrap: wrap;
+  }
+  
+  .nav-list > li {
+    flex-basis: 30%;
+    padding: 5px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .nav-list > li {
+    flex-basis: 100%;
+    padding: 5px;
+  }
+  .log-out {
+    order: 1;
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  100%{
+    opacity: 1;
+  }
+  
+  0%{
+    opacity: 0;
+  }
+}

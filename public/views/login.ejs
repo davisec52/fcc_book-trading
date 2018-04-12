@@ -1,0 +1,20 @@
+<%include ./partials/header %>
+
+			<div class="body-container">
+				<div class="row-login">
+					<h2>Login</h2>
+					<div id="container-login">
+						<form id="login-form" action="/send-login-token" method="POST">
+							<label for="user" >Email - Enter email. A direct-access login link will be sent to the address you enter. Please allow a few seconds for processing.</label>
+							<input class="email-input" id="email-login" type="email" name="user" placeholder="Current Email" aria-required="true" autofocus></input>
+							<!-- <label for="password-login">Password</label><a id="forgot" href="#">forgot password</a>
+							<input class="password-input" id="password-login" type="password" name="password" placeholder="Current Password"></input> -->
+							<button type="submit" class="submit" id="sub-login">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div id="spacing-login"></div>
+			</div> <!-- .body-container -->
+
+
+<% include ./partials/footer %>

@@ -1,0 +1,221 @@
+.dash-container {
+	display:flex;
+	flex-direction: column;
+}
+
+#book-collection {
+	max-width: 100%;
+	border: 1px solid green;
+	margin-top: 25px;
+}
+
+#book-coll-hd {
+	margin-top: 5px;
+	margin-left: 1%;
+}
+
+#catalog {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.catalog-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
+	border: .5px solid blue;
+	margin: 3px 5px 10px 15px;
+	padding: 20px 20px 0 20px;
+
+}
+
+#delete-bx {
+	margin-bottom: 5px;
+}
+
+.delete-book {
+	margin: 5px;
+}
+
+.row-features-dash {
+	flex: 1;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+.row-features-requests {
+	flex: 1;
+	flex-direction: column;
+	border-bottom: 1px solid green;
+	margin-top: 25px;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+#search-input {
+	width: 70%;
+}
+
+.table-hd, .table-hd-outgoing {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid green;
+	border-top: 1px solid green;
+	align-items: stretch;
+	padding: 2px;
+}
+
+.table-hd div:nth-of-type(1) {width: 30%;}
+.table-hd div:nth-of-type(2) {width: 15%;}
+.table-hd div:nth-of-type(3) {width: 15%;}
+.table-hd div:nth-of-type(4) {width: 25%;}
+
+.table-hd-outoging div:nth-of-type(1) {width: 30%;}
+.table-hd-outoging div:nth-of-type(2) {width: 15%;}
+.table-hd-outoging div:nth-of-type(3) {width: 15%;}
+.table-hd-outoging div:nth-of-type(4) {width: 5%;}
+
+/*.table-hd-outoging div:nth-of-type(1) {width: 0%;}
+.table-hd-outoging div:nth-of-type(2) {width: 0%;}
+.table-hd-outoging div:nth-of-type(3) {width: 15%;}
+.table-hd-outoging div:nth-of-type(4) {width: 5%;}*/
+
+.row, .row-outgoing {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	//align-items: stretch;
+	padding: 2px;
+	margin-top: 5px;
+}
+
+.row div:nth-of-type(1) {width: 30%;}
+.row div:nth-of-type(2) {width: 15%;}
+.row div:nth-of-type(3) {width: 15%;}
+.row div:nth-of-type(4) {width: 4%;}
+.row div:nth-of-type(5) {width: 5%;}
+.row div:nth-of-type(6) {width: 5%;}
+
+.row-outgoing div:nth-of-type(1) {width: 30%;}
+.row-outgoing div:nth-of-type(2) {width: 33%;}
+.row-outgoing div:nth-of-type(3) {width: 28%;}
+.row-outgoing div:nth-of-type(4) {width: 5%;}
+
+/*.row-outgoing div:nth-of-type(1) {width: 30%;}
+.row-outgoing div:nth-of-type(2) {width: 25%;}
+.row-outgoing div:nth-of-type(3) {width: 20%;}
+.row-outgoing div:nth-of-type(4) {width: 22%;}*/
+
+.delete-req {
+	margin-left: 2px;
+}
+
+.accept {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#accept-trade {
+	width: 100%;
+	background-color: blue;
+	font-size: 17px;
+	text-align: center;
+	color: white;
+	padding: 3px;
+	border-radius: 5px;
+	//margin-bottom: 3px;
+}
+
+#reject-trade {
+	width: 100%;
+	background-color: red;
+	font-size: 17px;
+	text-align: center;
+	color: white;
+	padding: 3px;
+	border-radius: 5px;
+	margin-bottom: 3px;
+}
+
+.row-span {
+	display: flex;
+}
+
+.book-container {
+	display: none;
+	background-color: #b6b9fc;
+	position: relative;
+	flex-direction: column;
+	width: 80%;
+	border: 1px solid green;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: slide;
+    animation-duration: 0.4s
+}
+
+#close-btn {
+	width: 120px;
+	background-color: ;
+	font-size: 25px!important;
+	margin-top: 5px;
+}
+
+#modal-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.book-selection {
+	margin-left: 10%;
+}
+
+#add-btn {
+	background-color: grey;
+	font-size: 15px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#dash-spacing {
+	background-color: #ebeef4;
+	height: 200px; /* must equal height of #footer */
+	border-radius: 10px;
+}
+#dash-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    position: relative;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    background-color: #a9a9a9;
+    height: 60px; /* height must equal height in #spacing div */
+    border-radius: 5px;
+}
+
+#footer-txt {
+	font-size: 20px;
+	color: blue;
+	text-align: center;
+}
+
+@keyframes slide {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+

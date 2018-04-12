@@ -1,0 +1,38 @@
+<%include ./partials/header %>
+
+	<div class="body-container">
+		<div class="row-title-profile">
+			<p id="sub-title-profile">Hello, <%= user.userName %>, create or modify your profile information here</p>
+		</div>
+		<div class="form-features">
+			<div class="form-feature">
+				<form action="/edit-profile-feature/<%= user._id %>?_method=PUT" method="POST" class="profile-form">
+					<label for="bio">Edit Location</label>
+					<input type="text" name="location" id="profile-loc"></input>
+					<input type="submit"></input>
+					<!-- <a type="button" href="/profile/<%=user._id %>">All Done?</a> -->
+				</form>
+			</div>
+			<div class="form-feature">
+				<form action="/edit-profile-feature/<%= user._id %>/<%=user.userName %>?_method=PUT" method="POST" class="profile-form">
+					<label for="name">Edit Username</label>
+					<input type="text" name="name" id="profile-name"></input>
+					<input type="submit"></input>
+					<!-- <a type="button" href="/profile/<%=user._id %>">All Done?</a> -->
+				</form>
+			</div>
+			<div class="form-feature">
+				<form action="/edit-profile-feature/<%= user._id %>?_method=PUT" method="POST" class="profile-form">
+					<label for="email">Edit Email</label>
+					<input type="email" name="email" id="profile-email"></input>
+					<input type="submit"></input>
+					<!-- <a type="button" href="/profile/<%=user._id %>">All Done?</a> -->
+				</form>
+			</div>
+				<button id="done"><a type="" id="" href="/profile/<%=user._id %>">All Done?</a></button>
+		</div> <!-- form-features-->
+		<!-- <div id="spacing"></div> -->
+	</div> <!-- .body-container -->
+
+
+<% include ./partials/footer %>

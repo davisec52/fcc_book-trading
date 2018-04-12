@@ -1,0 +1,36 @@
+<%include ./partials/header %>
+
+	<div class="body-container">
+		<div class="row-title">
+			<h1>All the Books</h1>
+			<p id="sub-title">Hello, <%= user.userName %>! Initiate book trades here!</p>
+		</div>
+		<div class="row-features-catalog">
+
+			<div id="book-collection">
+				<h3 id="book-coll-hd">Catalog of Books Held by Membership</h3>
+				<div id="catalog">
+					<% books.forEach((book) => { %>
+					<div class="catalog-item">
+						<img src="<%=book.image %>" >
+						<div id="request">
+							<p>Owner: <%=book.owner.ownerName %></p>
+								<form action="/request-book/id=<%=book.id %>&title=<%=book.title %>&author=<%=book.author %>&to=<%=book.owner.ownerName %>&from=<%=user.userName %>" method="POST">
+								<button id="owner-req">Request Trade</button>
+							</form>
+						</div>
+					</div>
+				<% }); %>
+				</div> <!-- catalog -->
+			</div> <!-- book-collection -->
+
+			<!-- <div class="feature"><p>Complete Catalog Listing</p></div>
+			<div class="feature"><p>Complete Catalog Listing</p></div>
+			<div class="feature"><p>Complete Catalog Listing</p></div> -->
+		</div>
+		<div id="dash-spacing"></div>
+	</div> <!-- .body-container -->
+
+
+<!-- <% include ./partials/footer %> -->
+<% include ./partials/dash-footer %>
