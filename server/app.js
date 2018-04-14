@@ -35,7 +35,8 @@ mongoose.connect(process.env.MONGODB_URI, {
 	throw err;
 });
 
-let host = "http://localhost:3000" || "https://fcc-book-ex-app.herokuapp.com";
+//let host = "http://localhost:3000" || "https://fcc-book-ex-app.herokuapp.com";
+let host = "https://fcc-book-ex-app.herokuapp.com";
 
 passwordless.init( new MongoStore( process.env.MONGODB_URI ));
 passwordless.addDelivery(
