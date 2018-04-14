@@ -35,7 +35,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 	throw err;
 });
 
-let host = "http://localhost:3000";
+let host = "http://localhost:3000" || "https://fcc-book-ex-app.herokuapp.com";
 
 passwordless.init( new MongoStore( process.env.MONGODB_URI ));
 passwordless.addDelivery(
@@ -59,9 +59,9 @@ passwordless.addDelivery(
       ]
       }, function( err, message ) { 
         if( err ) {
-          console.log( err );
+          console.log("error in sending: ", err );
         }
-          callback( err );
+          callback("sending callback: ",  err );
         });
 });
 
@@ -97,6 +97,6 @@ app.set("view engine", "ejs");
 app.use("/", indexRoutes);
 
 
-app.listen(port, () => {
+app.listen(port, process.env.IP, () => {
 	console.log(`Server listening on port ${port}...`);
 });
