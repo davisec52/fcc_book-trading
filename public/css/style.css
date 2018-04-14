@@ -337,7 +337,7 @@ a, a:active, a:focus, a:hover, a:visited {
 @media all and (max-width: 1100px) {
 	#accept-btn-container {
 		flex-direction: row;
-  		flex-basis: 100%;
+  		flex-basis: 30%;
 	}
 }
 

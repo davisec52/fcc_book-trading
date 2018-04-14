@@ -55,16 +55,16 @@
 						<div class="row-cell"><%=item.created %></div>
 						<div class="row-cell"><%=item.from %></div>
 						<div class="row-cell" id="accept-btn-container">
-						<% if(item.accept === true) { %>
-							<div class="row-cell">accept</div>
-						<% }else if(item.accept === false) { %>
-						<div class="row-cell">reject</div>
-						<%	} else { %>
-						<div class="row-cell">pending</div>
-						<% } %>
+							<% if(item.accept === true) { %>
+								<div class="status-result row-cell">accept</div>
+							<% }else if(item.accept === false) { %>
+							<div class="status-result row-cell">reject</div>
+							<%	} else { %>
+							<div class="status-result row-cell">pending</div>
+							<% } %>
 							<div class="row-cell accept-btn"><a href="/accept/<%=true %>/<%=item.id %>"><div id="accept-trade" class="">Accept</div></a></div>
 							<div class="row-cell accept-btn"><a href="/accept/<%=false %>/<%=item.id %>"><div id="reject-trade" class="">Reject</div></a></div>
-						</div>
+							</div>
 					</div> <!-- .row -->
 		    	<%	}); %>
 			</div>
