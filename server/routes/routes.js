@@ -1,4 +1,4 @@
-const config = require("../../.config/.config");
+const config = require("../../.config/config");
 const {deleteFromRequestor, deleteOwnerBook, findFrom, changeBookOwner, otherRequestsTo, otherRequestsFrom} = require("../helpers/book-helpers");
 const express = require("express");
 const admin = express();
