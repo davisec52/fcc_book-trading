@@ -74,7 +74,6 @@ $(document).ready(function() {
 	}
 
 	//Prevent click on book-delete button from bubbling up but still allow form to submit 
-	console.log(document.getElementById("del-btn"));
 	document.getElementById("del-btn").addEventListener("click", (e) => {
 		console.log("checking preventDefault for delete book btn");
 		e.stopPropagation();
@@ -82,7 +81,6 @@ $(document).ready(function() {
 
 	let accept = document.getElementsByClassName("bool-btn");
 	let acceptArray = Array.from(accept);
-	console.log(accept);
 	acceptArray.forEach((el, index) => {
 		el.addEventListener("click", (e) => {
 				e.stopPropagation();

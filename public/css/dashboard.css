@@ -229,13 +229,6 @@
 	margin-left: 10%;
 }
 
-#add-btn {
-	background-color: grey;
-	font-size: 15px;
-	padding: 5px;
-	border-radius: 5px;
-}
-
 #dash-spacing {
 	background-color: #ebeef4;
 	height: 200px; /* must equal height of #footer */

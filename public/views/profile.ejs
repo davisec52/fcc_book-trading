@@ -6,24 +6,33 @@
 		</div>
 		<div class="row-features">
 			<div class="feature">
-				<h4>Location</h4>
+				<!-- <h4 class="profile-header">Location</h4> -->
 				<div class="profile profile-location">
+					<h4 class="profile-header">Location</h4>
 					<%= location %>
-					<button type="submit"><a href="/edit-profile/<%= user._id %>">Edit</a></button>
+					<button class="edit-profile" type="submit">
+						<a href="/edit-profile/<%= user._id %>">Edit</a>
+					</button>
 				</div>
 			</div>
 			<div class="feature">
-				<h4>Username</h4>
+				<!-- <h4 class="profile-header">Username</h4> -->
 				<div class="profile profile-name">
+					<h4 class="profile-header">Username</h4>
 					<%= username %>
-					<button type="submit"><a href="/edit-profile/<%= user._id %>">Edit</a></button>
+					<button class="edit-profile" type="submit">
+						<a href="/edit-profile/<%= user._id %>">Edit</a>
+					</button>
 				</div>
 			</div>
 			<div class="feature">
-				<h4>email</h4>
+				<!-- <h4 class="profile-header">email</h4> -->
 				<div class="profile profile-email">
+					<h4 class="profile-header">email</h4>
 					<%= email %>
-					<button type="submit"><a href="/edit-profile/<%= user._id %>">Edit</a></button>
+					<button class="edit-profile" type="submit">
+						<a href="/edit-profile/<%= user._id %>">Edit</a>
+					</button>
 				</div>
 			</div>
 		</div>

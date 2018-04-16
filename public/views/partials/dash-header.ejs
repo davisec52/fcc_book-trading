@@ -14,13 +14,10 @@
 	    	<div class="nav-bar">
 	    		<ul class="nav-list">
 	    			<li class="nav-item nav-item--home"><a href="/">Home</a></li>
-	    			<!-- <li class="nav-item"><a href="/catalog">See All Books</a></li> -->
-	    			<!-- <li class="nav-item"><a href="/login">Log in</a></li> -->
 	    			<% if(user) { %>
 	    				<li class="nav-item log-out"><a href="/logout">Logout</a></li>
 	    				<li class="nav-item welcome">Welcome <%= user.userName %>!</li>
-	    				<!-- <li class="nav-item profile"><a href="/profile/<%= user._id %>">Settings</a></li> -->
-	    				<li class="nav-item profile">
+	    				<li class="nav-item profile-settings">
 	    					Settings
 	    					<ul class="sub-ul">
 	    						<li class="drop"><a href="/profile/<%= user._id %>">Profile Options</a></li>

@@ -1,9 +1,11 @@
 html,
 body {
 	background-color: #ebeef4;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	//overflow-x: hidden;
 }
 
 * {
@@ -11,9 +13,9 @@ body {
 	/*box-sizing: border-box;*/
 }
 
-/**:after, before: {
-	box-sizing: inherit;
-}*/
+*:after, before: {
+	//box-sizing: border-box;
+}
 
 /* height specification of .container necessary for footer to sit reliably at bottom of page */
 /* https://stackoverflow.com/questions/5189238/how-to-make-a-footer-fixed-in-the-page-bottom */
@@ -24,16 +26,19 @@ body {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -60px;
+	padding: 0;
 }
 
 .body-container {
 	background-color: #ebeef4;
 	width: 100%;
+	padding: 0;
+	margin: 0 auto;
 }
 
 .row-features {
+	width: 100%;
 	display: flex;
-	/*background-color: #ebeef4;*/
 	background-color: #FEF9E7;
 	align-items: center;
 	max-height: 100%;
@@ -41,8 +46,29 @@ body {
 	border-radius: 10px;
 }
 
-.row-features-catalog {
+.feature {
 	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	border-radius: 2px;
+}
+
+.row-title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #bad6ef;
+	margin-top: 10px;
+	//padding: 25px;
+	border-radius: 10px;
+}
+
+.row-features-catalog {
+	//flex: 1;
+	display: flex;
 	flex-direction: column;
 	margin-top: 5px;
 	margin-right: 10%;
@@ -70,49 +96,50 @@ body {
 .form-features {
 	display: flex;
 	flex-direction: column;
-	/*background-color: #ebeef4;*/
 	background-color: #FEF9E7;
-	//align-items: center;
+	align-items: center;
 	max-height: 100%;
 	text-align: center;
 	border-radius: 10px;
 }
 
 .form-feature {
-	flex: 1;
+	//flex: 1;
+	display: flex;
 	flex-direction: column;
-	//border: 1px solid green;
-	align-items: left;
+	justify-content: center;
+	align-items: center;
+	//align-items: left;
 	margin-top: 20px;
-	margin-left: 25%;
-	margin-right: 25%;
+	/*margin-left: 25%;
+	margin-right: 25%;*/
 	padding: 2px;
 	border-radius: 2px;
 }
 
 .profile-form {
 	display: flex;
+	width: 200%;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.feature {
-	flex: 1;
-	//border: 1px solid green;
-	margin-top: 50px;
-	margin-left: 5%;
-	margin-right: 5%;
-	border-radius: 2px;
-}
-
 .profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 10px;
 	margin-right: 5%;
 }
 
+.profile-header {
+	text-align: center;
+}
+
 #spacing {
 	background-color: #FEF9E7;
-	height: 60px; /* must equal height of #footer */
+	height: 60px;  /*must equal height of #footer*/ 
 	border-radius: 10px;
 }
 
@@ -125,6 +152,7 @@ body {
     bottom:0px;
     width: 100%;
     margin: 0;
+    padding: 0;
     background-color: #a9a9a9;
     height: 60px; /* height must equal height in #spacing div */
     border-radius: 5px;
@@ -132,9 +160,10 @@ body {
 
 #dash-spacing {
 	background-color: #ebeef4;
-	height: 200px; /* must equal height of #footer */
+	height: 200px; /* helps footer remain fixed to bottom and allows page to scroll */
 	border-radius: 10px;
 }
+
 #dash-footer {
 	display: flex;
 	flex-direction: column;
@@ -162,17 +191,6 @@ body {
 	text-align: center;
 }
 
-.row-title {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #bad6ef;
-	margin-top: 10px;
-	padding: 25px;
-	border-radius: 10px;
-}
-
 .row-title-profile {
 	width: 100%;
 	max-height: 25px;
@@ -182,7 +200,7 @@ body {
 	align-items: center;
 	background-color: #bad6ef;
 	margin-top: 10px;
-	padding: 20px;
+	padding: 20px 0 20px 0;
 	border-radius: 10px;
 }
 
@@ -251,14 +269,13 @@ input {
 .nav-bar {
 	position: relative;
 	max-width: 100%;
-	/*background-color: #ebeef4;*/
 	background-color: #a9a9a9;
 	border: .1px solid transparent;
 	border-radius: 10px;
 }
 
 .nav-list {
-	width: 100%;
+	max-width: 100%;
    	display: flex;
    	font-size: 25px;
    	list-style: none;
@@ -266,20 +283,20 @@ input {
 
 /* allows nav items to position on left */
 .nav-list > .nav-item {
-	/*flex: auto;*/
    	text-align: left;
    	font-size: 20px;
    	margin-left: 25px;
 }
 
-.profile > ul {
-	color: blue;
+.sub-ul {
+	margin-right: 20px;
 }
 
-/*.sub-ul {
-	list-style: none;
-}*/
+.drop {
+	margin-left: -10px;
+}
 
+/* Postion property affects operation of drop-down menu */
 .nav-bar > ul > li > ul{
 	//position: absolute;
 	position: relative;
@@ -287,7 +304,7 @@ input {
 	width: 100%;
 	max-height: 0;
 	list-style: none;
-	padding-left: 5px;
+	margin-left:0px;
 	transition: all 1.5s ease-in-out;
    -webkit-transition: all .5s ease-in-out;
    -moz-transition: all .5s ease-in-out;
@@ -313,13 +330,13 @@ input {
 	//margin-right: 40%;
 }
 
-.profile {
-	margin-left: 25%;
-	padding-right: 10px;
-}
-
-.register {
-	//flex: 1;
+.profile-settings {
+	display: flex;
+	flex-direction: column;
+	//margin-left: 15%;
+	//padding-right: 10px;
+	margin-bottom: 10px;
+	margin-right: 5%;
 }
 
 .welcome {
@@ -348,6 +365,7 @@ a, a:active, a:focus, a:hover, a:visited {
    	 display: flex;
    	 flex-direction: column;
 	 position: relative; /* Changed position to relative to keep footer on bottom */
+	 width: 100%;
 	}
 
   .row-features {
@@ -356,7 +374,6 @@ a, a:active, a:focus, a:hover, a:visited {
 
   .row-features > div {
   	flex-basis: 100%;
-  	//padding: 5%;
   }
      
   .nav-list {
@@ -380,9 +397,10 @@ a, a:active, a:focus, a:hover, a:visited {
   #reject-trade {
   	padding: 5px 10px 5px 5px;
   }
+
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   .nav-list > li {
     flex-basis: 100%;
     padding: 5px;
@@ -390,6 +408,10 @@ a, a:active, a:focus, a:hover, a:visited {
   .log-out {
     order: 1;
   }
+
+  .profile-form {
+	width: 150%;
+   }
 }
 
 @keyframes appear {
