@@ -12,6 +12,9 @@ User Story: I can update my settings to store my full name, city, and state.
 
 User Story: I can propose a trade and wait for the other user to accept the trade.
 
-Once you've finished implementing these user stories, click the "I've completed this challenge" button and enter the URLs for both your GitHub repository and your live app running on Heroku.
 
-You can get feedback on your project by sharing it with your friends on Facebook.
+For the purposes of this challenge I used the Google book api to source book results. The passwordless
+login is managed by the passwordless plugin found at https://www.npmjs.com/package/passwordless. I created a free email address using outlook.live.com. I found this workable for development, but outlook
+is slow and finnecky with regard to use. 
+
+A working version of this project can be found on heroku at http://fcc-book-ex-app.herokuapp.com
