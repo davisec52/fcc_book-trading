@@ -5,7 +5,6 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	//overflow-x: hidden;
 }
 
 * {
@@ -51,9 +50,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	//margin-top: 50px;
 	border: 1px solid green;
-	margin: 50px 20px 20px 20px;
+	margin: 50px 30px 20px 30px;
 	border-radius: 2px;
 }
 
@@ -83,11 +81,11 @@ body {
 	border-radius: 2px;
 }
 
-#book-collection {
+/*#book-collection {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
+}*/
 
 #catalog {
 	display: flex;
@@ -143,6 +141,15 @@ body {
 
 .profile-header {
 	text-align: center;
+}
+
+.edit-profile {
+	width: 50px;
+	font-size: 15px;
+	padding: 2px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
 }
 
 #spacing {
