@@ -41,7 +41,8 @@
 }
 
 .row-features-dash {
-	flex: 1;
+	//flex: 1;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-top: 30px;
@@ -63,8 +64,15 @@
 	border-radius: 2px;
 }
 
+#search-label {
+	display: block;
+	margin-left: 10px;
+	font-weight: 600;
+	font-size: 23px;
+}
+
 #search-input {
-	width: 70%;
+	width: 80%;
 }
 
 .table-hd, .table-hd-outgoing {
