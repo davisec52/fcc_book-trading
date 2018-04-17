@@ -52,6 +52,10 @@
 	border-radius: 2px;
 }
 
+#search-box {
+	width 100%;
+}
+
 .row-features-requests {
 	flex: 1;
 	flex-direction: column;
