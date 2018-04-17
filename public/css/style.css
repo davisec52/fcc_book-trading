@@ -427,6 +427,18 @@ a, a:active, a:focus, a:hover, a:visited {
    #search-input {
    	width: 300px;
    }
+
+   #footer, #dash-footer {
+   	font-size: 15px;
+   }
+
+   #sub-title {
+	font-size: 20px;
+}
+
+	#sub-title-profile {
+		font-size: 20px;
+	}
 }
 
 @keyframes appear {
