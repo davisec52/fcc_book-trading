@@ -421,11 +421,11 @@ a, a:active, a:focus, a:hover, a:visited {
    }
 
    #row-login {
-   	width: 90%;
+   	width: 100%;
    }
 
    #search-input {
-   	width: 90%;
+   	width: 100%;
    }
 }
 
